@@ -13,8 +13,13 @@ document.addEventListener("keypress", () => {
   if (!dino.classList.contains("jump-animation")) {
     jump();
   }
-   
-});   
+});
+
+document.addEventListener("touchstart", () => {
+    if (!dino.classList.contains("jump-animation")) {
+      jump();
+    }
+});
 
 setInterval (() => {
     score.innerText++;
